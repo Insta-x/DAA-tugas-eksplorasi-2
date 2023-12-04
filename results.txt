@@ -1,0 +1,24 @@
+Greedy small
+cost = 59
+0.0 ms   
+44.06640625 MB
+Branch and Bound small
+cost = 59
+7.006645202636719 ms
+44.07421875 MB
+Greedy medium
+cost = 328
+0.9851455688476562 ms
+44.07421875 MB
+Branch and Bound medium
+cost = 287
+141.0064697265625 ms
+44.1328125 MB
+Greedy large
+cost = 593
+5.003213882446289 ms
+44.4765625 MB
+Branch and Bound large
+cost = 593
+1599.0331172943115 ms
+44.69921875 MB
