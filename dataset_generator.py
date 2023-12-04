@@ -11,20 +11,22 @@ def main():
         'medium' : 200,
         'large' : 2000,
     }
+    n_sets = [20, 25, 30]
     
     for size in sizes:
-        universe = set(range(1, sizes[size]+1))
-        sets = []
-        test_set = set()
-        while test_set != universe:
+        for n in n_sets:
+            universe = set(range(1, sizes[size]+1))
             sets = []
             test_set = set()
-            for i in range(20):
-                x = random_set(randint(sizes[size] // 4, sizes[size] // 2), 1, sizes[size])
-                sets.append(x)
-                test_set |= x
-        costs = [randint(1, 100) for _ in range(20)]
-        data_to_file(f'./datasets/{size}.txt', sets, costs)
+            while test_set != universe:
+                sets = []
+                test_set = set()
+                for i in range(n):
+                    x = random_set(max(1, randint(sizes[size] // n, sizes[size] // 2)), 1, sizes[size])
+                    sets.append(x)
+                    test_set |= x
+            costs = [randint(1, 100) for _ in range(n)]
+            data_to_file(f'./datasets/{size}_{n}.txt', sets, costs)
 
 
 if __name__ == '__main__':

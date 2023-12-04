@@ -1,3 +1,4 @@
+# 20 subsets
 Greedy small
 cost = 59
 0.0 ms   
@@ -22,3 +23,77 @@ Branch and Bound large
 cost = 593
 1599.0331172943115 ms
 44.69921875 MB
+
+# n_sets
+Greedy small_20
+cost = 113
+0.0 ms
+46.703125 MB
+Branch and Bound small_20
+cost = 95
+4.0073394775390625 ms
+46.703125 MB
+Greedy small_25
+cost = 152
+0.0 ms
+46.703125 MB
+Branch and Bound small_25
+cost = 128
+10.006427764892578 ms
+46.703125 MB
+Greedy small_30
+cost = 116
+0.0 ms
+46.703125 MB
+Branch and Bound small_30
+cost = 108
+105.00669479370117 ms
+46.703125 MB
+Greedy medium_20
+cost = 451
+1.0004043579101562 ms
+46.703125 MB
+Branch and Bound medium_20
+cost = 413
+49.00932312011719 ms
+46.7109375 MB
+Greedy medium_25
+cost = 231
+0.0 ms
+46.7109375 MB
+Branch and Bound medium_25
+cost = 183
+25.004863739013672 ms
+46.7109375 MB
+Greedy medium_30
+cost = 307
+0.0 ms
+46.7109375 MB
+Branch and Bound medium_30
+cost = 261
+232.99789428710938 ms
+46.7109375 MB
+Greedy large_20
+cost = 698
+4.9991607666015625 ms
+47.09375 MB
+Branch and Bound large_20
+cost = 637
+229.9954891204834 ms
+47.234375 MB
+Greedy large_25
+cost = 762
+5.99980354309082 ms
+47.234375 MB
+Branch and Bound large_25
+cost = 730
+1645.625114440918 ms
+47.234375 MB
+Greedy large_30
+cost = 752
+5.99980354309082 ms
+47.23828125 MB
+Branch and Bound large_30
+cost = 726
+7760.241746902466 ms
+47.390625 MB

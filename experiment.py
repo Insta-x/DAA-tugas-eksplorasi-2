@@ -21,16 +21,19 @@ def time_experiment_cover(cover_func, data):
 
 def main():
     sizes = ['small', 'medium', 'large']
+    n_sets = [20, 25, 30]
     datasets = {}
     
     for size in sizes:
-        datasets[f'{size}'] = file_to_data(f'./datasets/{size}.txt')
+        for n in n_sets:
+            datasets[f'{size}_{n}'] = file_to_data(f'./datasets/{size}_{n}.txt')
     
     for size in sizes:
-        print(f'Greedy {size}')
-        experiment_cover(set_cover, datasets[f'{size}'])
-        print(f'Branch and Bound {size}')
-        experiment_cover(BB, datasets[f'{size}'])
+        for n in n_sets:
+            print(f'Greedy {size}_{n}')
+            experiment_cover(set_cover, datasets[f'{size}_{n}'])
+            print(f'Branch and Bound {size}_{n}')
+            experiment_cover(BB, datasets[f'{size}_{n}'])
 
 
 if __name__ == '__main__':
